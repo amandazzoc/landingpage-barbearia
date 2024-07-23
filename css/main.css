@@ -1,0 +1,40 @@
+:root {
+    --red-1: #BA181B;
+    --red-2: #E5383B;
+    --black-1: #0B090A;
+    --black-2: #161A1D;
+}
+
+/* Generico */
+
+body{
+    font-family: 'Manrope', sans-serif;
+}
+
+.btn-header{
+    padding: 12px 24px;
+    background-color: transparent;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+}
+
+.container{
+    max-width: 1280px;
+    margin: 0 auto; /* Divide o espaço das laterais fazendo com que o conteúdo centralize */
+}
+
+/* Layout */
+
+#header-container {
+    background-color: var(--black-1);
+}
+
+.header{
+    padding: 24px 72px;
+    color: #FFFFFF;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+

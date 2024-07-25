@@ -8,19 +8,62 @@
 /* Generico */
 
 body{
-    font-family: 'Manrope', sans-serif;
+    font-family: 'Epilogue', sans-serif;
+    color: var(--black-1);
 }
 
-.btn-header{
-    padding: 12px 24px;
+.btn{
+    padding: 20px 40px;
     background-color: transparent;
     color: #FFFFFF;
+    font-size: 1.1rem;
+
+    display: flex;
+    align-items: end;
+    gap: 12px;
+
+    transition: 0.2s;
+}
+
+.btn-sm{
+    padding: 12px 24px;
+    font-size: 0.9rem
+}
+
+.btn-primary{
+    background-color: var(--red-2);
+}
+
+.btn-primary:hover{
+    background-color: var(--red-1);
+}
+
+.btn-outline{
     border: 2px solid #FFFFFF;
+    background-color: transparent;
+}
+
+.btn-outline:hover{
+    border-color: #D9D9D9;
+    color: #D9D9D9;
 }
 
 .container{
     max-width: 1280px;
     margin: 0 auto; /* Divide o espaço das laterais fazendo com que o conteúdo centralize */
+}
+
+.overtitle{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    color: var(--red-2);
+}
+
+.title{
+    font-size: 44px;
+    line-height: 56px;
+    font-weight: 700;
 }
 
 /* Layout */
@@ -38,3 +81,120 @@ body{
     align-items: center;
 }
 
+/* HERO SECTION */
+
+#hero-container{
+    background-color: var(--black-1);
+    color: #FFFFFF;
+    padding: 0 72px;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 42px;
+}
+
+.hero-text{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 96px 0;
+}
+
+.hero-img{
+    flex: 1;
+}
+
+.hero-img img{
+    max-width: 100%;
+    align-self: flex-end;
+}
+
+.hero-text__title{
+    font-size: 56px;
+    line-height: 64px;
+    font-weight: 700;
+}
+
+.hero-text__subtitle{
+    font-size: 20px;
+    line-height: 28px;
+    max-width: 520px;
+}
+
+/* SERVICES SECTION */
+
+#services-container{
+    padding: 96px 72px;
+}
+
+.services-list{
+    margin-top: 48px;
+    display: flex;
+    gap: 32px;
+}
+
+.services-card {
+    background-color: #F5F3F4;
+    border: 2px solid #D3D3D3;
+}
+
+.services-card img{
+    width: 100%;
+}
+
+.services-card__text{
+    padding: 32px;
+}
+
+.services-card__text h3{
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.services-card__text p{
+    font-size: 16px;
+    line-height: 24px;
+}
+
+/* LOCATION SECTION */
+
+#location-container {
+    background-color: #F5F3F4;
+}
+
+#location-container .location{
+    padding: 96px 72px 48px
+}
+
+#location-container address{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: var(--black-1);
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 48px 72px;
+}
+
+footer a{
+    color: currentColor; /* Pega a cor do elemento pai */
+}
+
+.footer-text{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
